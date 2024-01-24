@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0kdg65vrcdea"]
+
+[ext_resource type="Script" path="res://scripts/controller.gd" id="1_62byu"]
+[ext_resource type="PackedScene" uid="uid://brn2dfvtgn0no" path="res://scenes/ball.tscn" id="1_j12s2"]
+
+[node name="world" type="Node2D"]
+script = ExtResource("1_62byu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="balls" type="Node2D" parent="."]
+
+[node name="ball" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(-480, -198)
+
+[node name="ball2" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(-204, -199)
+
+[node name="ball3" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(145, -185)
+
+[node name="ball4" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(461, -186)
+
+[node name="ball5" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(462, 155)
+
+[node name="ball6" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(162, 151)
+
+[node name="ball7" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(-162, 140)
+
+[node name="ball8" parent="balls" instance=ExtResource("1_j12s2")]
+position = Vector2(-456, 129)
